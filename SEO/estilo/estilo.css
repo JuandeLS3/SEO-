@@ -113,7 +113,7 @@ footer{
   position:fixed;
    left:0px;
    bottom:0px;
-   height:100px;
+   height:90px;
    width:100%;
    background: #333;
   color: white;
@@ -122,6 +122,61 @@ footer{
   margin-top: 40px;
 }
 
+/* Para que se centre bien el contenido. By Juan */
+article {
+  padding: 0 5% 0 5%;
+  padding-bottom: 8em; /* Para que el contenido no se esconda tras el footer gigante de javi */
+}
+
+article p {
+  margin-right: 10em;
+}
+/* Para que se centre bien el contenido. By Juan */
+
 footer p {
   font-size: 1em;
 }
+
+/* ##################### ACCESIBILIDAD ##################### */
+
+.acce h1 {
+  font-size: 3.2em;
+  text-shadow: 3px 3px 2px grey;
+  text-align: center;
+}
+
+.acce p {
+  margin-right: 10em;
+}
+
+.acce h2 {
+  font-size: 2.2em;
+}
+#img1 {
+  float: right;
+  border-radius: 12px 12px 12px 12px;
+  width: 20em;
+  margin: 15px;
+}
+#img2 {
+  display:block;
+  margin: 0 auto;
+  border-radius: 12px 12px 12px 12px;
+  width: 40em;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ##################### ACCESIBILIDAD ##################### */
