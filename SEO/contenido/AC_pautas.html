@@ -1,0 +1,119 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Accesibilidad y posicionamiento</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="../estilo/estilo.css">
+</head>
+	<div class="fijo">
+	<header>
+		<h1>ACCESIBILIDAD Y POSICIONAMIENTO</h1>	
+	</header>
+	<nav>
+		<ul><li><a href="../index.html">Inicio</a></li>
+		  <li><a href="#">Accesibilidad</a>
+		  	<ul>
+		      <li><a href="AC_quees.html">¿Qué es?</a></li>
+		      <li><a href="AC_pautas.html">Pautas y niveles de conformidad</a></li>
+		      <li><a href="AC_tools.html">Herramientas de evaluación</a></li>
+		      <li><a href="AC_dispos.html">Dispositivos adaptados</a></li>
+		      <li><a href="AC_leyes.html">Leyes y decretos</a></li>
+		    </ul>
+		  </li>
+		  <li>
+		    <a href="">Posicionamiento</a>
+		    <ul>
+		      <li><a href="">Inicio</a></li>
+		      <li><a href="">Inicio</a></li>
+		      <li><a href="">Inicio</a></li>
+		    </ul>
+		  </li>
+		  <li><a href="">Contacto</a></li>
+		</ul>
+	</nav>
+	</div>
+	<aside>
+		
+	</aside>
+	<section>
+		<article lang="es" class="acce">
+			<h1>POR UN MUNDO ACCESIBLE PARA TODOS</h1>
+			<h2>Pautas y niveles de conformidad</h2>
+
+			<p>
+				Para hacer el contenido Web accesible, se han desarrollado las denominadas Pautas de Accesibilidad al Contenido en la Web <b>(WCAG)</b>, cuya función principal es guiar el diseño de páginas Web hacia un diseño accesible.</p>
+			<p>
+				WCAG consiste en <b>14 pautas</b> que proporcionan soluciones de diseño y que utilizan como ejemplo situaciones comunes en las que el diseño de una página puede producir problemas de acceso a la información. 
+			</p>
+			<p>
+				Cada punto de verificación está asignado a uno de los <b>tres niveles de prioridad</b> establecidos por las pautas.
+		    <ul>
+		    	<li><b>Prioridad 1.</b></li>
+		    	<p>
+		    		son aquellos puntos que un desarrollador Web tiene que cumplir ya que, de otra manera, ciertos grupos de usuarios no podrían acceder a la información del sitio Web.
+		    	</p>
+		    	<li><b>Prioridad 2.</b></li>
+		    	<p>
+		    		son aquellos puntos que un desarrollador Web debería cumplir ya que, si no fuese así, sería muy difícil acceder a la información para ciertos grupos de usuarios.
+		    	</p>
+		    	<li><b>Prioridad 3.</b></li>
+		    	<p>
+		    		son aquellos puntos que un desarrollador Web debería cumplir ya que, de otra forma, algunos usuarios experimentarían ciertas dificultades para acceder a la información.
+		    	</p>
+		    </ul>
+		    <p>
+				En función a estos puntos de verificación se establecen los <b>niveles de conformidad:</b> 
+			</p>
+
+			<ul>
+		    	<li><b>Nivel de Conformidad "A".</b></li>
+		    	<p>
+		    		todos los puntos de verificación de prioridad 1 se satisfacen.
+		    	</p>
+		    	<li><b>Nivel de Conformidad "Doble A".</b></li>
+		    	<p>
+		    		todos los puntos de verificación de prioridad 1 y 2 se satisfacen.
+		    	</p>
+		    	<li><b>Nivel de Conformidad "Triple A".</b></li>
+		    	<p>
+		    		todos los puntos de verificación de prioridad 1,2 y 3 se satisfacen.
+		    	</p>
+		    </ul>
+
+		    <p>
+		    	Las pautas describen cómo hacer páginas Web accesibles sin sacrificar el diseño.
+		    </p>
+		    <p>
+		    	Ejemplos:
+
+				Un ejemplo de <i>prioridad 1</i> sería la identificación clara de cualquier cambio de idioma que se pueda producir en el texto de un documento. Es decir, si se utilizan diferentes idiomas es necesario que cualquier cambio esté claramente señalado con el atributo <b><a href="https://www.w3schools.com/tags/att_global_lang.asp">lang</a></b>:
+			</p>
+	        <p>
+				Un ejemplo de código correcto sería el siguiente:
+			</p>
+				<code>
+					<p>&lt;p&gt;</p>
+	                <p>&lt;q&gt;Buenos días Philip&lt;/q&gt;</p>
+	                <p>&lt;q <b>lang="en"</b>>Good morning&lt;/q&gt;. Respondió Philip en inglés.</p>
+	                <p>&lt;q&gt;¿Qué tal estás?&lt;/q&gt;</p>
+	                <p>&lt;q <b>lang="fr"</b>>Très bien.&lt;/q&gt; Volvió a responder, pero esta vez en francés.</p>
+	           		<p>&lt;/p&gt;</p>
+				</code>
+			<p>
+				Otro ejemplo de <i>prioridad 1</i> sería la utilización del atributo <b><a href="https://www.w3schools.com/tags/att_img_alt.asp">alt</a></b> para incorporar texto equivalente al contenido de una imagen cuando se quieren utilizar gráficos; esto permitiría que dispositivos o personas que no pueden visualizar los gráficos, obtengan una representación alternativa textual. El código correspondiente sería:
+			</p>
+				<code>
+					&lt;img src="wai.png" alt="Web Accessibility Initiative" lang="en"/&gt;
+			    </code>
+			<p class="info">
+				La etiqueta del nivel de conformidad <b>"Triple A"</b> y por tanto más superior sería la siguiente:
+			</p>
+			<img alt="Etiqueta o tag triple AAA del WCAG" id="img3" src="../imagenes/acc3.png">
+		</article>
+	</section>
+	<footer>
+		<p>IES Poligono Sur<br>2º Desarrollo de Aplicaciones Web<br>Diseño de Interfaces Web<br>Accesibilidad y posicionamiento </p>
+	</footer>
+</body>
+</html>

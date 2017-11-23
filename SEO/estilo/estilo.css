@@ -163,8 +163,23 @@ footer p {
   margin: 0 auto;
   border-radius: 12px 12px 12px 12px;
   width: 40em;
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
-
+#img3 {
+  display:block;
+  margin: 0 auto;
+  border-radius: 12px 12px 12px 12px;
+  width: 20em;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+code {
+  font-style: italic;
+}
+.info {
+  background-color: yellow;
+}
 
 
 
