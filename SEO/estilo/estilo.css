@@ -174,16 +174,29 @@ footer p {
   margin-top: 30px;
   margin-bottom: 30px;
 }
+#img4 {
+  float: right;
+  border-radius: 12px 12px 12px 12px;
+  width: 8em;
+  margin: 20px;
+}
+
 code {
   font-style: italic;
 }
 .info {
   background-color: yellow;
 }
-
-
-
-
+.listapasos {
+  list-style-type: square;
+}
+.listadisp {
+  font-weight: bolder;
+}
+q {
+  font-style: italic;
+  padding-right: 50%;
+}
 
 
 
