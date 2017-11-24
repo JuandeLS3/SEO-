@@ -99,6 +99,11 @@ aside{
      background:   #FFF8DC;
 }
 
+aside img{
+  width: 100%;
+  height: 30%;
+}
+
 section{
   position: absolute;
   padding-left: 20px;
@@ -113,7 +118,7 @@ footer{
   position:fixed;
    left:0px;
    bottom:0px;
-   height:90px;
+   height:40px;
    width:100%;
    background: #333;
   color: white;
@@ -136,6 +141,22 @@ article p {
 footer p {
   font-size: 1em;
 }
+
+#autor{
+  font-size: 1.5em;
+  text-align: center;
+}
+
+video{
+  margin-left: 25%;
+}
+
+
+cite {
+  font-size: 1.5em;
+}
+
+
 
 /* ##################### ACCESIBILIDAD ##################### */
 
@@ -184,9 +205,7 @@ footer p {
 code {
   font-style: italic;
 }
-.info {
-  background-color: yellow;
-}
+
 .listapasos {
   list-style-type: square;
 }
@@ -197,14 +216,6 @@ q {
   font-style: italic;
   padding-right: 50%;
 }
-
-
-
-
-
-
-
-
 
 
 /* ##################### ACCESIBILIDAD ##################### */
