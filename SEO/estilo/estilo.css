@@ -101,7 +101,7 @@ aside{
 
 aside img{
   width: 100%;
-  height: 30%;
+  height: 33%;
 }
 
 section{
@@ -201,7 +201,12 @@ cite {
   width: 8em;
   margin: 20px;
 }
-
+#img5 {
+  float: right;
+  border-radius: 12px 12px 12px 12px;
+  width: 28em;
+  margin: 20px;
+}
 code {
   font-style: italic;
 }
@@ -216,6 +221,25 @@ q {
   font-style: italic;
   padding-right: 50%;
 }
-
+.audio {
+  /* Centra el contenido de un div */
+  display: flex;
+  justify-content: right;
+}
+.tiosam {
+   position: relative;
+    -webkit-animation: tiosm 6s;  /* Safari 4.0 - 8.0 */
+    -webkit-animation-fill-mode: forwards; /* Safari 4.0 - 8.0 */
+    animation: tiosm 6s;
+    animation-fill-mode: forwards;
+}
+@-webkit-keyframes tiosm {
+    from {left: -800px;}
+    to {left: 0;}
+}
+@keyframes tiosm {
+    from {left: -800px;}
+    to {left: 0;}
+}
 
 /* ##################### ACCESIBILIDAD ##################### */
