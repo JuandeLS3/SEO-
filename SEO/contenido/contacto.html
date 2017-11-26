@@ -12,11 +12,13 @@
 	</header>
 	<nav>
 		<ul><li><a href="../index.html">Inicio</a></li>
-		  <li><a href="">Accesibilidad</a>
+		  <li><a href="#">Accesibilidad</a>
 		  	<ul>
-		      <li><a href="">Inicio</a></li>
-		      <li><a href="">Inicio</a></li>
-		      <li><a href="">Inicio</a></li>
+		      <li><a href="AC_quees.html">¿Qué es?</a></li>
+		      <li><a href="AC_pautas.html">Pautas y niveles de conformidad</a></li>
+		      <li><a href="AC_tools.html">Herramientas de evaluación</a></li>
+		      <li><a href="AC_dispos.html">Dispositivos adaptados</a></li>
+		      <li><a href="AC_leyes.html">Leyes y decretos</a></li>
 		    </ul>
 		  </li>
 		  <li>
@@ -27,21 +29,54 @@
 		      <li><a href="">Inicio</a></li>
 		    </ul>
 		  </li>
-		  <li><a href="">Contacto</a></li>
+		  <li><a href="contacto.html">Contacto</a></li>
 		</ul>
 	</nav>
 	</div>
 	<aside>
-		
+		<img src="../imagenes/iab.png"><br>
+		<img src="../imagenes/ontsi.jpg"><br>
+		<img src="../imagenes/usa.svg">
+
 	</aside>
 	<section>
 		<article>
-			
+			 <form  class="contact_form" action="#" id="contact_form" runat="server">
+        <div>
+            <ul>
+                <li>
+                    <h2>Contactos</h2>
+                    <span class="required_notification">* Datos requeridos</span>
+                </li>
+                <li>
+                    <label for="name">Nombre:</label>
+                    <input type="text" placeholder="John Doe" required />
+                </li>
+                <li>
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" placeholder="info@developerji.com" required />
+                    <span class="form_hint">Formato correcto: "name@something.com"</span>
+                </li>
+                <li>
+                    <label for="website">Sitio web:</label>
+                    <input type="url" name="website" placeholder="http://developerji.com" required pattern="(http|https)://.+" />
+                    <span class="form_hint">Formato correcto: "http://developerji.com"</span>
+                </li>
+                <li>
+                    <label for="message">Mensaje:</label>
+                    <textarea name="message" cols="40" rows="6" required></textarea>
+                </li>
+                <li>
+                    <button class="submit" type="submit">Enviar mensaje</button>
+                </li>
+            </ul>
+        </div>
+    </form>
 
 		</article>
 	</section>
 	<footer>
-		<p>IES Poligono Sur<br>2º Desarrollo de Aplicaciones Web<br>Diseño de Interfaces Web<br>Accesibilidad y posicionamiento </p>
+		<p>IES Poligono Sur || 2º Desarrollo de Aplicaciones Web ||  Diseño de Interfaces Web ||  Accesibilidad y posicionamiento </p>	
 	</footer>
 </body>
 </html>
