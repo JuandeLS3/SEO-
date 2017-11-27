@@ -50,45 +50,340 @@
 			<p>
 				Para hacer el contenido Web accesible, se han desarrollado las denominadas Pautas de Accesibilidad al Contenido en la Web <b>(WCAG)</b>, cuya función principal es guiar el diseño de páginas Web hacia un diseño accesible.</p>
 			<p>
-				WCAG consiste en <b>14 pautas</b> que proporcionan soluciones de diseño y que utilizan como ejemplo situaciones comunes en las que el diseño de una página puede producir problemas de acceso a la información. 
+				WCAG 2.0 consiste en <b><a href="http://www.sidar.org/traducciones/wcag20/es/#intro">12 pautas</a></b> que proporcionan soluciones de diseño y que utilizan como ejemplo situaciones comunes en las que el diseño de una página puede producir problemas de acceso a la información. Éstas 12 pautas se dividen a su vez en 4 bloques que hacen que una página web finalmente sea:
+			<ul>
+		    	<li><b>PERCEPTIBLE</b></li>
+		    	<li><b>OPERABLE</b></li>
+		    	<li><b>COMPRENSIBLE</b></li>
+		    	<li><b>ROBUSTA</b></li>
+		    </ul>
 			</p>
 			<p>
-				Cada punto de verificación está asignado a uno de los <b>tres niveles de prioridad</b> establecidos por las pautas.
+				En la versión 1.0 de WCAG se usaban los niveles de prioridad, éstos, han sido reemplazados en la versión WCAG 2.0 por los <b>niveles de conformidad.</b>
 			</p>
 			<img alt="Etiqueta o tag triple AAA del WCAG" id="img5" src="../imagenes/peter.jpg">
-		    <ul>
-		    	<li><b>Prioridad 1.</b></li>
-		    	<p>
-		    		son aquellos puntos que un desarrollador Web tiene que cumplir ya que, de otra manera, ciertos grupos de usuarios no podrían acceder a la información del sitio Web.
-		    	</p>
-		    	<li><b>Prioridad 2.</b></li>
-		    	<p>
-		    		son aquellos puntos que un desarrollador Web debería cumplir ya que, si no fuese así, sería muy difícil acceder a la información para ciertos grupos de usuarios.
-		    	</p>
-		    	<li><b>Prioridad 3.</b></li>
-		    	<p>
-		    		son aquellos puntos que un desarrollador Web debería cumplir ya que, de otra forma, algunos usuarios experimentarían ciertas dificultades para acceder a la información.
-		    	</p>
-		    </ul>
-		    <p>
-				En función a estos puntos de verificación se establecen los <b>niveles de conformidad:</b> 
-			</p>
-
 			<ul>
 		    	<li><b>Nivel de Conformidad "A".</b></li>
 		    	<p>
-		    		todos los puntos de verificación de prioridad 1 se satisfacen.
-		    	</p>
+		    		Para lograr conformidad con el Nivel A (el mínimo), la página web satisface todos los Criterios de Conformidad del Nivel A, o proporciona una versión alternativa conforme.
+		    	
+		    	<input type="button" onclick="if(document.getElementById('spoiler1') .style.display=='none') {document.getElementById('spoiler1') .style.display=''; this.value = 'Ocultar'; }else{document.getElementById('spoiler1') .style.display='none';this.value = 'Mostrar criterios'; }" value="Mostrar criterios"/>
+		    		<div id="spoiler1" style="display:none">
+						<p>Son <b>25 criterios:</b></p>
+						<dl>
+						<dt>1.1.1 Contenido no textual</dt>
+						<dd>Todo contenido no textual que se presenta al usuario tiene una alternativa textual que cumple el mismo propósito, excepto en las situaciones enumeradas a continuación.
+						</dd>
+
+						<dt>1.2.1 Sólo audio y sólo vídeo (grabado)</dt>
+						<dd>Para contenido sólo audio grabado y contenido sólo vídeo grabado, se cumple lo siguiente, excepto cuando el audio o el vídeo es un contenido multimedia alternativo al texto y está claramente identificado como tal:
+						<ul>
+						<li>Sólo audio grabado: Se proporciona una alternativa para los medios tempodependientes que presenta información equivalente para el contenido sólo audio grabado.</li>
+						<li>Sólo vídeo grabado: Se proporciona una alternativa para los medios tempodependientes o se proporciona una pista sonora que presenta información equivalente al contenido del medio de sólo vídeo grabado.</li>
+						</ul>
+						</dd>
+
+						<dt>1.2.2 Subtítulos (grabados)</dt>
+						<dd>Se proporcionan subtítulos para el contenido de audio grabado dentro de contenido multimedia sincronizado, excepto cuando la presentación es un contenido multimedia alternativo al texto y está claramente identificado como tal.
+						</dd>
+
+						<dt>1.2.3 Audiodescripción o Medio Alternativo (grabado)</dt>
+						<dd>Se proporciona una alternativa para los medios tempodependientes o una audiodescripción para el contenido de vídeo grabado en los multimedia sincronizados, excepto cuando ese contenido es un contenido multimedia alternativo al texto y está claramente identificado como tal.
+						</dd>
+
+						<dt>1.3.1 Información y relaciones</dt>
+						<dd>La información, estructura y relaciones comunicadas a través de la presentación pueden ser determinadas por software o están disponibles como texto.
+						</dd>
+
+						<dt>1.3.2 Secuencia significativa</dt>
+						<dd>Cuando la secuencia en que se presenta el contenido afecta a su significado, se puede determinar por software la secuencia correcta de lectura.
+						</dd>
+
+						<dt>1.3.3 Características sensoriales</dt>
+						<dd>Las instrucciones proporcionadas para entender y operar el contenido no dependen exclusivamente en las características sensoriales de los componentes como su forma, tamaño, ubicación visual, orientación o sonido.
+						</dd>
+
+						<dt>1.4.1 Uso del color</dt>
+						<dd>El color no se usa como único medio visual para transmitir la información, indicar una acción, solicitar una respuesta o distinguir un elemento visual.
+						</dd>
+
+						<dt>1.4.2 Control del audio</dt>
+						<dd>Si el audio de una página web suena automáticamente durante más de 3 segundos, se proporciona ya sea un mecanismo para pausar o detener el audio, o un mecanismo para controlar el volumen del sonido que es independiente del nivel de volumen global del sistema.
+						</dd>
+
+						<dt>2.1.1 Teclado</dt>
+						<dd>Toda la funcionalidad del contenido es operable a través de una interfaz de teclado sin que se requiera una determinada velocidad para cada pulsación individual de las teclas, excepto cuando la función interna requiere de una entrada que depende del trayecto de los movimientos del usuario y no sólo de los puntos inicial y final.
+						</dd>
+
+						<dt>2.1.2 Sin trampas para el foco del teclado</dt>
+						<dd>Si es posible mover el foco a un componente de la página usando una interfaz de teclado, entonces el foco se puede quitar de ese componente usando sólo la interfaz de teclado y, si se requiere algo más que las teclas de dirección o de tabulación, se informa al usuario el método apropiado para mover el foco.
+						</dd>
+
+						<dt>2.2.1 Tiempo ajustable</dt>
+						<dd>Para cada límite de tiempo impuesto por el contenido, se cumple al menos uno de los siguientes casos:
+						<ul>
+						<li>Apagar: El usuario puede detener el límite de tiempo antes de alcanzar el límite de tiempo; o</li>
+						<li>Ajustar: El usuario puede ajustar el límite de tiempo antes de alcanzar dicho límite en un rango amplio que es, al menos, diez veces mayor al tiempo fijado originalmente; o</li>
+						<li>Extender: Se advierte al usuario antes de que el tiempo expire y se le conceden al menos 20 segundos para extender el límite temporal con una acción simple (por ejemplo, "presione la barra de espacio") y el usuario puede extender ese límite de tiempo al menos diez veces; o</li>
+						<li>Excepción de tiempo real: El límite de tiempo es un requisito que forma parte de un evento en tiempo real (por ejemplo, una subasta) y no resulta posible ofrecer una alternativa al límite de tiempo; o</li>
+						<li>Excepción por ser esencial: El límite de tiempo es esencial y, si se extendiera, invalidaría la actividad; o</li>
+						<li>Excepción de 20 horas: El límite de tiempo es mayor a 20 horas.</li>
+						</ul>
+						</dd>
+
+						<dt>2.2.2 Poner en pausa, detener, ocultar</dt>
+						<dd>Para la información que tiene movimiento, parpadeo, se desplaza o se actualiza automáticamente, se cumplen todos los casos siguientes:
+						<ul>
+						<li>Movimiento, parpadeo, desplazamiento: Para toda información que se mueve, parpadea o se desplaza, que (1) comienza automáticamente, (2) dura más de cinco segundos y (3) se presenta en paralelo con otro contenido, existe un mecanismo para que el usuario la pueda poner en pausa, detener u ocultar, a menos que el movimiento, parpadeo o desplazamiento sea parte esencial de una actividad; y</li>
+						<li>Actualización automática: Para toda información que se actualiza automáticamente, que (1) se inicia automáticamente y (2) se presenta en paralelo con otro contenido, existe un mecanismo para que el usuario la pueda poner en pausa, detener u ocultar, o controlar la frecuencia de actualización a menos que la actualización automática sea parte esencial de una actividad.</li>
+						</ul>
+						</dd>
+
+						<dt>2.3.1 Umbral de tres destellos o menos</dt>
+						<dd>Las páginas web no contienen nada que destelle más de tres veces en un segundo, o el destello está por debajo del umbral de destello general y de destello rojo.
+						</dd>
+
+						<dt>2.4.1 Evitar bloques</dt>
+						<dd>Existe un mecanismo para evitar los bloques de contenido que se repiten en múltiples páginas web.
+						</dd>
+
+						<dt>2.4.2 Titulado de páginas</dt>
+						<dd>Las páginas web tienen títulos que describen su temática o propósito.
+						</dd>
+
+						<dt>2.4.3 Orden del foco</dt>
+						<dd>Si se puede navegar secuencialmente por una página web y la secuencia de navegación afecta su significado o su operación, los componentes que pueden recibir el foco lo hacen en un orden que preserva su significado y operabilidad.
+						</dd>
+
+						<dt>2.4.4 Propósito de los enlaces (en contexto)</dt>
+						<dd>El propósito de cada enlace puede ser determinado con sólo el texto del enlace o a través del texto del enlace sumado al contexto del enlace determinado por software, excepto cuando el propósito del enlace resultara ambiguo para los usuarios en general.
+						</dd>
+
+						<dt>3.1.1 Idioma de la página</dt>
+						<dd>El idioma predeterminado de cada página web puede ser determinado por software.
+						</dd>
+
+						<dt>3.2.1 Al recibir el foco</dt>
+						<dd>Cuando cualquier componente recibe el foco, no inicia ningún cambio en el contexto.
+						</dd>
+
+						<dt>3.2.2 Al recibir entradas</dt>
+						<dd>El cambio de estado en cualquier componente de la interfaz de usuario no provoca automáticamente un cambio en el contexto a menos que el usuario haya sido advertido de ese comportamiento antes de usar el componente.
+						</dd>
+
+						<dt>3.3.1 Identificación de errores</dt>
+						<dd>Si se detecta automáticamente un error en la entrada de datos, el elemento erróneo es identificado y el error se describe al usuario mediante un texto.
+						</dd>
+
+						<dt>3.3.2 Etiquetas o instrucciones</dt>
+						<dd>Se proporcionan etiquetas o instrucciones cuando el contenido requiere la introducción de datos por parte del usuario.
+						</dd>
+
+						<dt>4.1.1 Procesamiento</dt>
+						<dd>En los contenidos implementados mediante el uso de lenguajes de marcas, los elementos tienen las etiquetas de apertura y cierre completas; los elementos están anidados de acuerdo a sus especificaciones; los elementos no contienen atributos duplicados y los ID son únicos, excepto cuando las especificaciones permitan estas características.
+						</dd>
+
+						<dt>4.1.2 Nombre, función, valor</dt>
+						<dd>Para todos los componentes de la interfaz de usuario (incluyendo pero no limitado a: elementos de formulario, enlaces y componentes generados por scripts), el nombre y la función pueden ser determinados por software; los estados, propiedades y valores que pueden ser asignados por el usuario pueden ser especificados por software; y los cambios en estos elementos se encuentran disponibles para su consulta por las aplicaciones de usuario, incluyendo las ayudas técnicas.
+						</dd>
+					</div>
+				</p>
+
 		    	<li><b>Nivel de Conformidad "Doble A".</b></li>
 		    	<p>
-		    		todos los puntos de verificación de prioridad 1 y 2 se satisfacen.
-		    	</p>
+		    		Para lograr conformidad con el Nivel AA, la página web satisface todos los Criterios de Conformidad de los Niveles A y AA, o se proporciona una versión alternativa conforme al Nivel AA.
+		    	
+		    	<input type="button" onclick="if(document.getElementById('spoiler2') .style.display=='none') {document.getElementById('spoiler2') .style.display=''; this.value = 'Ocultar'; }else{document.getElementById('spoiler2') .style.display='none';this.value = 'Mostrar criterios'; }" value="Mostrar criterios"/>
+		    		<div id="spoiler2" style="display:none">
+						<p>Son <b>13 criterios:</b></p>
+						<dl>
+						<dt>1.2.4 Subtítulos (en directo)</dt>
+						<dd>Se proporcionan subtítulos para todo el contenido de audio en directo de los multimedia sincronizados.
+						</dd>
+
+						<dt>1.2.5 Audiodescripción (grabado)</dt>
+						<dd>Se proporciona una audiodescripción para todo el contenido de vídeo grabado dentro de contenido multimedia sincronizado.
+						</dd>
+
+						<dt>1.4.3 Contraste (mínimo)</dt>
+						<dd> La presentación visual de texto e imágenes de texto tiene una relación de contraste de, al menos, 4.5:1, excepto en los siguientes casos:
+						<ul>
+						<li>Textos grandes: Los textos de gran tamaño y las imágenes de texto de gran tamaño tienen una relación de contraste de, al menos, 3:1.</li>
+						<li>Incidental: Los textos o imágenes de texto que forman parte de un componente inactivo de la interfaz de usuario, que son simple decoración, que no resultan visibles para nadie o forman parte de una imagen que contiene otros elementos visuales significativos, no tienen requisitos de contraste.</li>
+						<li>Logotipos: El texto que forma parte de un logo o nombre de marca no tiene requisitos de contraste mínimo.</li>
+						</ul>
+						</dd>
+
+						<dt>1.4.4 Cambio de tamaño del texto</dt>
+						<dd>A excepción de los subtítulos y las imágenes de texto, todo el texto puede ser ajustado sin ayudas técnicas hasta un 200 por ciento sin que se pierdan el contenido o la funcionalidad.
+						</dd>
+
+						<dt>1.4.5 Imágenes de texto</dt>
+						<dd>Si con las tecnologías que se están utilizando se puede conseguir la presentación visual deseada, se utiliza texto para transmitir la información en vez de imágenes de texto, excepto en los siguientes casos:
+						<ul>
+						<li>Configurable: La imagen de texto es visualmente configurable según los requisitos del usuario.</li>
+						<li>Esencial: Una forma particular de presentación del texto resulta esencial para la información que se transmite.</li>
+						</ul>
+						</dd>
+
+						<dt>2.4.5 Múltiples vías</dt>
+						<dd>Se proporciona más de un camino para localizar una página web dentro de un conjunto de páginas web, excepto cuando la página es el resultado, o un paso intermedio, de un proceso.
+						</dd>
+
+						<dt>2.4.6 Encabezados y etiquetas</dt>
+						<dd>Los encabezados y etiquetas describen el tema o propósito.
+						</dd>
+
+						<dt>2.4.7 Foco visible</dt>
+						<dd>Cualquier interfaz de usuario operable por teclado tiene una forma de operar en la cuál el indicador del foco del teclado resulta visible.
+						</dd>
+
+						<dt>3.1.2 Idioma de las partes</dt>
+						<dd>El idioma de cada pasaje o frase en el contenido puede ser determinado por software, excepto los nombres propios, términos técnicos, palabras en un idioma indeterminado y palabras o frases que se hayan convertido en parte natural del texto que las rodea.
+						</dd>
+
+						<dt>3.2.3 Navegación coherente</dt>
+						<dd>Los mecanismos de navegación que se repiten en múltiples páginas web dentro de un conjunto de páginas web aparecen siempre en el mismo orden relativo cada vez que se repiten, a menos que el cambio sea provocado por el propio usuario.
+						</dd>
+
+						<dt>3.2.4 Identificación coherente</dt>
+						<dd>Los componentes que tienen la misma funcionalidad dentro de un conjunto de páginas web son identificados de manera coherente.
+						</dd>
+
+						<dt>3.3.3 Sugerencias ante errores</dt>
+						<dd>Si se detecta automáticamente un error en la entrada de datos y se dispone de sugerencias para hacer la corrección, entonces se presentan las sugerencias al usuario, a menos que esto ponga en riesgo la seguridad o el propósito del contenido.
+						</dd>
+
+						<dt>3.3.4 Prevención de errores (legales, financieros, datos)</dt>
+						<dd>Para las páginas web que representan para el usuario compromisos legales o transacciones financieras; que modifican o eliminan datos controlables por el usuario en sistemas de almacenamiento de datos; o que envían las respuestas del usuario a una prueba, se cumple al menos uno de los siguientes casos:
+						<ol>
+						<li>Reversible: El envío es reversible.</li>
+						<li>Revisado: Se verifica la información para detectar errores en la entrada de datos y se proporciona al usuario una oportunidad de corregirlos.</li>
+						<li>Confirmado: Se proporciona un mecanismo para revisar, confirmar y corregir la información antes de finalizar el envío de los datos.</li>
+					</div>
+				</p>
 		    	<li><b>Nivel de Conformidad "Triple A".</b></li>
 		    	<p>
-		    		todos los puntos de verificación de prioridad 1,2 y 3 se satisfacen.
-		    	</p>
-		    </ul>
+		    		Para lograr conformidad con el Nivel AAA, la página web satisface todos los Criterios de Conformidad de los Niveles A, AA y AAA, o proporciona una versión alternativa conforme al Nivel AAA.
+		    	
+		    		<input type="button" onclick="if(document.getElementById('spoiler3') .style.display=='none') {document.getElementById('spoiler3') .style.display=''; this.value = 'Ocultar'; }else{document.getElementById('spoiler3') .style.display='none';this.value = 'Mostrar criterios'; }" value="Mostrar criterios"/>
+		    		<div id="spoiler3" style="display:none">
+		    			<p>Son <b>23 criterios:</b></p>
+						<dl>
+						<dt>1.2.6 Lengua de señas (grabado)</dt>
+						<dd>Se proporciona una interpretación en lengua de señas para todo el contenido de audio grabado dentro de contenido multimedia sincronizado.
+						</dd>
 
+						<dt>1.2.7 Audiodescripción ampliada (grabada)</dt>
+						<dd>Cuando las pausas en el audio de primer plano son insuficientes para permitir que la audiodescripción comunique el significado del vídeo, se proporciona una audiodescripción ampliada para todos los contenidos de vídeo grabado dentro de contenido multimedia sincronizado.
+						</dd>
+
+						<dt>1.2.8 Medio alternativo (grabado)</dt>
+						<dd>Se proporciona una alternativa para los medios tempodependientes, tanto para todos los contenidos multimedia sincronizados grabados como para todos los medios de sólo vídeo grabado.
+						</dd>
+
+						<dt>1.2.9 Sólo audio (en directo)</dt>
+						<dd>Se proporciona una alternativa para los medios tempodependientes que presenta información equivalente para el contenido de sólo audio en directo.
+						</dd>
+
+						<dt>1.4.6 Contraste (mejorado)</dt>
+						<dd>La presentación visual de texto e imágenes de texto tiene una relación de contraste de, al menos, 7:1, excepto en los siguientes casos:
+						<ul>
+						<li>Textos grandes: Los textos de gran tamaño y las imágenes de texto de gran tamaño tienen una relación de contraste de, al menos, 4.5:1.</li>
+						<li>Incidental: Los textos o imágenes de texto que forman parte de un componente de la interfaz de usuario inactivo, que son simple decoración, que no resultan visibles para nadie o forman parte de una imagen que contiene otros elementos visuales significativos, no tienen requisitos de contraste.</li>
+						<li>Logotipos: El texto que forma parte de un logo o nombre de marca no tiene requisitos de contraste mínimo.</li>
+						</ul>
+						</dd>
+
+						<dt>1.4.7 Sonido de fondo bajo o ausente</dt>
+						<dd>Para el contenido de sólo audio grabado que (1) contiene habla en primer plano, (2) no es un CAPTCHA sonoro o un audiologo, y (3) que no es una vocalización cuya intención principal es servir como expresión musical (como el canto o el rap), se cumple al menos uno de los siguientes casos:
+						<ul>
+						<li>Ningún sonido de fondo: El audio no contiene sonidos de fondo.</li>
+						<li>Apagar: Los sonidos de fondo pueden ser apagados.</li>
+						<li>20 dB: Los sonidos de fondo son, al menos, 20 decibelios más bajos que el discurso en primer plano, con la excepción de sonidos ocasionales que duran solamente uno o dos segundos.</li>
+						</ul>
+						</dd>
+
+						<dt>1.4.8 Presentación visual</dt>
+						<dd>En la presentación visual de bloques de texto, se proporciona algún mecanismo para lograr lo siguiente:
+						<ol>
+						<li>Los colores de fondo y primer plano pueden ser elegidos por el usuario.</li>
+						<li>El ancho no es mayor de 80 caracteres o signos (40 si es CJK).</li>
+						<li>El texto no está justificado (alineado a los márgenes izquierdo y derecho a la vez).</li>
+						<li>El espacio entre líneas (interlineado) es de, al menos, un espacio y medio dentro de los párrafos y el espacio entre párrafos es, al menos, 1.5 veces mayor que el espacio entre líneas.</li>
+						<li>El texto se ajusta sin ayudas técnicas hasta un 200 por ciento de modo tal que no requiere un desplazamiento horizontal para leer una línea de texto en una ventana a pantalla completa.</li>
+						</ol>
+						</dd>
+
+						<dt>1.4.9 Imágenes de texto (sin excepciones)</dt>
+						<dd>Las imágenes de texto sólo se utilizan como simple decoración o cuando una forma de presentación particular del texto resulta esencial para la información transmitida.
+						</dd>
+
+						<dt>2.1.3 Teclado (sin excepciones)</dt>
+						<dd>Toda la funcionalidad del contenido se puede operar a través de una interfaz de teclado sin requerir una determinada velocidad en la pulsación de las teclas.
+						</dd>
+
+						<dt>2.2.3 Sin tiempo</dt>
+						<dd>El tiempo no es parte esencial del evento o actividad presentada por el contenido, exceptuando los multimedia sincronizados no interactivos y los eventos en tiempo real.
+						</dd>
+
+						<dt>2.2.4 Interrupciones</dt>
+						<dd>El usuario puede postergar o suprimir las interrupciones, excepto cuando las interrupciones implican una emergencia.
+						</dd>
+
+						<dt>2.2.5 Re-autentificación</dt>
+						<dd>Cuando expira una sesión autentificada, el usuario puede continuar la actividad sin pérdida de datos tras volver a identificarse.
+						</dd>
+
+						<dt>2.3.2 Tres destellos</dt>
+						<dd>Las páginas web no contienen nada que destelle más de tres veces por segundo.
+						</dd>
+
+						<dt>2.4.8 Ubicación</dt>
+						<dd>Se proporciona información acerca de la ubicación del usuario dentro de un conjunto de páginas web.
+						</dd>
+
+						<dt>2.4.9 Propósito de los enlaces (sólo enlaces)</dt>
+						<dd>Se proporciona un mecanismo que permite identificar el propósito de cada enlace con sólo el texto del enlace, excepto cuando el propósito del enlace resultara ambiguo para los usuarios en general.
+						</dd>
+
+						<dt>2.4.10 Encabezados de sección</dt>
+						<dd>Se usan encabezados de sección para organizar el contenido.
+						</dd>
+
+						<dt>3.1.3 Palabras inusuales</dt>
+						<dd>Se proporciona un mecanismo para identificar las definiciones específicas de palabras o frases usadas de modo inusual o restringido, incluyendo expresiones idiomáticas y jerga.
+						</dd>
+
+						<dt>3.1.4 Abreviaturas</dt>
+						<dd>Se proporciona un mecanismo para identificar la forma expandida o el significado de las abreviaturas.
+						</dd>
+
+						<dt>3.1.5 Nivel de lectura</dt>
+						<dd>Cuando un texto requiere un nivel de lectura más avanzado que el nivel mínimo de educación secundaria una vez que se han eliminado nombres propios y títulos, se proporciona un contenido suplementario o una versión que no requiere un nivel de lectura mayor a ese nivel educativo.
+						</dd>
+
+						<dt>3.1.6 Pronunciación</dt>
+						<dd>Se proporciona un mecanismo para identificar la pronunciación específica de las palabras cuando el significado de esas palabras, dentro del contexto, resulta ambiguo si no se conoce su pronunciación.
+						</dd>
+
+						<dt>3.2.5 Cambios a petición</dt>
+						<dd>Los cambios en el contexto son iniciados únicamente a solicitud del usuario o se proporciona un mecanismo para detener tales cambios.
+						</dd>
+
+						<dt>3.3.5 Ayuda</dt>
+						<dd>Se proporciona ayuda dependiente del contexto.
+						</dd>
+
+						<dt>3.3.6 Prevención de errores (todos)</dt>
+						<dd>Para las páginas web que requieren al usuario el envío de información, se cumple al menos uno de los siguientes casos:
+						<ol>
+						<li>Reversible: El envío es reversible.</li>
+						<li>Revisado: Se verifica la información para detectar errores en la entrada de datos y se proporciona al usuario una oportunidad de corregirlos.</li>
+						<li>Confirmado: Se proporciona un mecanismo para revisar, confirmar y corregir la información antes de finalizar el envío de los datos.</li>
+					</div>
+				</p>
+		    </ul>
 		    <p>
 		    	Las pautas describen cómo hacer páginas Web accesibles sin sacrificar el diseño.
 		    </p>
@@ -100,6 +395,7 @@
 	        <p>
 				Un ejemplo de código correcto sería el siguiente:
 			</p>
+			<div id="code">
 				<code>
 					<p>&lt;p&gt;</p>
 	                <p>&lt;q&gt;Buenos días Philip&lt;/q&gt;</p>
@@ -108,10 +404,11 @@
 	                <p>&lt;q <b>lang="fr"</b>>Très bien.&lt;/q&gt; Volvió a responder, pero esta vez en francés.</p>
 	           		<p>&lt;/p&gt;</p>
 				</code>
+			</div>
 			<p>
 				Otro ejemplo de <i>prioridad 1</i> sería la utilización del atributo <b><a href="https://www.w3schools.com/tags/att_img_alt.asp">alt</a></b> para incorporar texto equivalente al contenido de una imagen cuando se quieren utilizar gráficos; esto permitiría que dispositivos o personas que no pueden visualizar los gráficos, obtengan una representación alternativa textual. El código correspondiente sería:
 			</p>
-				<code>
+				<code id="code">
 					&lt;img src="wai.png" <b>alt</b>="Web Accessibility Initiative" <b>lang</b>="en"/&gt;
 			    </code>
 			<p class="info">
